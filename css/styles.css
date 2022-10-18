@@ -575,6 +575,10 @@ img {
   cursor: pointer;
 }
 
+.sign-up-button:hover,
+.sign-up-button:focus {
+}
+
 .sign-up-button-icon {
   margin-left: 10px;
 }
@@ -680,7 +684,7 @@ img {
 }
 
 .form-input {
-  padding: 11px 12px;
+  padding: 11px 35px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -690,7 +694,7 @@ img {
 }
 
 .form-field:focus-within .form-input {
-  border: 1px solid rgb(33, 150, 243);
+  outline: 1px solid rgb(33, 150, 243);
 }
 
 .form-input-comment {
@@ -758,8 +762,8 @@ img {
 }
 
 .checkbox-icon {
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
 }
 
 .disclamer-input:checked + .checkbox-icon-container {
