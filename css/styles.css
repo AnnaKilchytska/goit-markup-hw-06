@@ -513,6 +513,72 @@ img {
   fill: #ffffff;
 }
 
+.sign-up {
+  margin-left: auto;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+}
+
+.sign-up-heading {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.sign-up-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  min-width: 358px;
+  padding: 15px 16px;
+}
+
+.sign-up-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-up-button {
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+
+  background: var(--text-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up-button-icon {
+  margin-left: 10px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -533,6 +599,7 @@ img {
 
   min-width: 528px;
   min-height: 581px;
+  padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -558,6 +625,7 @@ img {
 
   width: 30px;
   height: 30px;
+
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -565,9 +633,171 @@ img {
   cursor: pointer;
 }
 
+.modal-button:hover,
+.modal-button:focus {
+  fill: var(--text-accent);
+}
+
 .icon-close-modal {
   width: 100%;
   height: 100%;
+}
+
+.form-heading {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-main);
+}
+
+.form-field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field-comment {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: var(--text-secondary);
+}
+
+.form-input {
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field:focus-within .form-icon {
+  fill: var(--text-accent);
+}
+
+.form-field:focus-within .form-input {
+  border: 1px solid rgb(33, 150, 243);
+}
+
+.form-input-comment {
+  resize: none;
+  padding: 12px 16px;
+  height: 120px;
+}
+
+.form-field-comment .form-input-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-icon {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+
+  top: 30px;
+  left: 15px;
+}
+
+.disclamer-checkbox {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disclamer-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.disclamer-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--text-secondary);
+}
+
+.disclamer-link {
+  color: var(--text-accent);
+}
+
+.checkbox-icon-container {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--text-main);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.checkbox-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.disclamer-input:checked + .checkbox-icon-container {
+  background-color: var(--text-accent);
+  border: 2px solid var(--text-accent);
+  border: none;
+}
+
+.form-button {
+  padding: 10px 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  background-color: var(--text-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  border: none;
+  margin-right: auto;
+  margin-left: auto;
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background: #188ce8;
 }
 
 /* PORTFOLIO */
