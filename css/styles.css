@@ -473,8 +473,16 @@ img {
 
 .footer-container {
   display: flex;
-  column-gap: 70px;
   align-items: baseline;
+}
+
+.main-info {
+  margin-right: 70px;
+  flex-grow: 1;
+}
+
+.join-us {
+  margin-right: 93px;
 }
 
 .logo-footer {
