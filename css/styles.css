@@ -573,10 +573,13 @@ img {
   color: #ffffff;
   border: none;
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sign-up-button:hover,
 .sign-up-button:focus {
+  background-color: #188ce8;
 }
 
 .sign-up-button-icon {
@@ -635,6 +638,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
@@ -687,6 +692,8 @@ img {
   padding: 11px 35px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field:focus-within .form-icon {
@@ -719,13 +726,12 @@ img {
 
   top: 30px;
   left: 15px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .disclamer-checkbox {
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .disclamer-input {
@@ -740,6 +746,10 @@ img {
 }
 
 .disclamer-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -751,25 +761,29 @@ img {
 
 .disclamer-link {
   color: var(--text-accent);
+  margin-left: 5px;
 }
 
 .checkbox-icon-container {
+  display: flex;
   width: 16px;
   height: 15px;
   border: 2px solid var(--text-main);
   border-radius: 2px;
   margin-right: 8px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon {
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
+  width: 100%;
+  height: 100%;
 }
 
 .disclamer-input:checked + .checkbox-icon-container {
   background-color: var(--text-accent);
-  border: 2px solid var(--text-accent);
-  border: none;
+  border: 1px solid var(--text-accent);
 }
 
 .form-button {
@@ -801,7 +815,7 @@ img {
 
 .form-button:hover,
 .form-button:focus {
-  background: #188ce8;
+  background-color: #188ce8;
 }
 
 /* PORTFOLIO */

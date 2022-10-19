@@ -454,7 +454,12 @@
         <div class="sign-up">
           <p class="sign-up-heading">Підпишіться на розсилку</p>
           <form class="sign-up-form">
-            <input type="email" placeholder="E-mail" class="sign-up-input" />
+            <input
+              type="email"
+              placeholder="E-mail"
+              name="sign-up-email"
+              class="sign-up-input"
+            />
             <button type="submit" class="sign-up-button">
               Підписатися
               <svg class="sign-up-button-icon" width="24px" height="24px">
@@ -478,7 +483,7 @@
           <form class="form">
             <div class="form-field">
               <label class="form-label" for="name">Ім'я</label>
-              <input class="form-input" type="text" id="name" />
+              <input class="form-input" type="text" id="name" name="name" />
               <span class="form-icon">
                 <svg class="input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#icon-person-form"></use>
@@ -487,7 +492,7 @@
             </div>
             <div class="form-field">
               <label class="form-label" for="tel">Телефон</label>
-              <input class="form-input" type="tel" id="tel" />
+              <input class="form-input" type="tel" id="tel" name="phone" />
               <span class="form-icon">
                 <svg class="input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#icon-phone-form"></use>
@@ -496,7 +501,7 @@
             </div>
             <div class="form-field">
               <label class="form-label" for="mail">Пошта</label>
-              <input class="form-input" type="email" id="mail" />
+              <input class="form-input" type="email" id="mail" name="email" />
               <span class="form-icon">
                 <svg class="input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#icon-email-form"></use>
@@ -507,6 +512,7 @@
             <div class="form-field form-field-comment">
               <label class="form-label" for="comment">Коментар</label>
               <textarea
+                name="comment"
                 class="form-input form-input-comment"
                 type="text"
                 id="comment"
@@ -514,14 +520,19 @@
               ></textarea>
             </div>
             <div class="disclamer-checkbox">
-              <input type="checkbox" id="disclamer" class="disclamer-input" />
-              <span class="checkbox-icon-container">
-                <svg class="checkbox-icon">
-                  <use href="./images/icons.svg#icon-check-form"></use>
-                </svg>
-              </span>
-              <label for="disclamer" class="disclamer-label"
-                >Погоджуюся з розсилкою та приймаю
+              <label for="disclamer" class="disclamer-label">
+                <input
+                  type="checkbox"
+                  id="disclamer"
+                  class="disclamer-input"
+                  name="disclamer"
+                />
+                <span class="checkbox-icon-container">
+                  <svg class="checkbox-icon">
+                    <use href="./images/icons.svg#icon-check-form"></use>
+                  </svg>
+                </span>
+                Погоджуюся з розсилкою та приймаю
                 <a href="#" class="disclamer-link"> Умови договору</a></label
               >
             </div>
